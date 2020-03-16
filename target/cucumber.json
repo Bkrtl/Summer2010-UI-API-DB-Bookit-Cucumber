@@ -1,0 +1,164 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-16T23:11:07.833Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1480512572,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.dbHook()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2954212481,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "three point verification (UI,DATABASE,API)",
+        "description": "",
+        "id": "user-verification;three-point-verification-(ui-database-api)",
+        "after": [
+          {
+            "result": {
+              "duration": 955887,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterDbHook()"
+            }
+          },
+          {
+            "result": {
+              "duration": 153700348,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8471269138,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user logs in using \"sbirdbj@fc2.com\" \"asenorval\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sbirdbj@fc2.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"asenorval\"",
+                  "offset": 37
+                }
+              ],
+              "location": "MyInfoStepDefs.user_logs_in_using(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5113348443,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user is on the my self page",
+            "match": {
+              "location": "MyInfoStepDefs.user_is_on_the_my_self_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4139825693,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I logged Bookit api using \"sbirdbj@fc2.com\" and \"asenorval\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sbirdbj@fc2.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"asenorval\"",
+                  "offset": 48
+                }
+              ],
+              "location": "ApiStepDefs.i_logged_Bookit_api_using_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1195691509,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I get the current user information from api",
+            "match": {
+              "location": "ApiStepDefs.i_get_the_current_user_information_from_api()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 260710948,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "UI,API and Database user information must be match",
+            "match": {
+              "location": "ApiStepDefs.ui_API_and_Database_user_information_must_be_match()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@db"
+          }
+        ]
+      }
+    ],
+    "name": "User Verification",
+    "description": "",
+    "id": "user-verification",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/user.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
